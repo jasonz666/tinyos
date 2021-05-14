@@ -43,5 +43,3 @@ $(HELLOOS_BIN): $(HELLOOS_ELF)
 	$(ASM) $(ASMBFLAGS) -o $@ $<
 %.o : %.c
 	$(CC) $(CFLAGS) -o $@ $<
-
-
