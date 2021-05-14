@@ -40,6 +40,15 @@ void _strwrite(char* string){
     return;
 }
 
+void _strwritepos(int x, int y, char* string){
+    char* p_strdst = _gotoxy(x, y);
+    while (*string){
+        *p_strdst = *string++;
+        p_strdst += 2;
+    }
+    return;
+}
+
 void printf(char* fmt, ...){
     _strwrite(fmt);
     return;
