@@ -6,7 +6,7 @@ menuentry 'HelloOS' {
      insmod part_msdos #GRUB加载分区模块识别分区。GPT分区要改为part_gpt
      insmod ext2 #GRUB加载ext文件系统模块识别ext文件系统
      set root='hd0,msdos1' #注意boot目录挂载的分区，这是我机器上的情况
-     multiboot2 /boot/HelloOS.bin #GRUB以multiboot2协议加载HelloOS.bin。boot是单独分区的话要改为/HelloOS.bin
+     multiboot2 /boot/HelloOS.bin #GRUB以multiboot2协议加载HelloOS.bin。boot是单独分区的话要改为/HelloOS.bin。CentOS7实验失败，或者CPU禁止，把multiboot2改为multiboot。
      boot #GRUB启动HelloOS.bin
 }
 #### END HelloOS ####
