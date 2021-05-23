@@ -24,13 +24,13 @@ void _strwrite(char* string){
              p_strdst = _gotoxy(0, _getlineno(p_strdst) + 1);
              *p_strdst = *++string;
         }else if (*string == 'H'){
-            _strcolor(p_strdst, string, (char)0x92);
+            _strcolor(p_strdst, string, (char)0x12);
         }else if (*string == 'l'){
-            _strcolor(p_strdst, string, (char)0x8c);
+            _strcolor(p_strdst, string, (char)0xc);
         }else if (*string == 'O'){
-            _strcolor(p_strdst, string, (char)0x85);
+            _strcolor(p_strdst, string, (char)0x5);
         }else if (*string == 'S'){
-            _strcolor(p_strdst, string, (char)0x8d);
+            _strcolor(p_strdst, string, (char)0xd);
         }else{
             *p_strdst = *string;
         }
